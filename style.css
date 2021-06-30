@@ -1,54 +1,119 @@
 html {
-    background-color: #e4e9ed;
-    text-align: left;
-    color: #2e3131;
-    font-family: 'Merriweather', serif;
-    margin: 20px;
+    font-size: 14px;
+    font-family: 'Merriweather', sans-serif;
 }
 
 body {
-    max-width: 90%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
+    width: 90%;
+    margin: auto;
+    background: -webkit-linear-gradient(-46deg, #22c4f8, #F20CEF);
+    background: linear-gradient(-46deg, #22c4f8, #F20CEF);
 }
 
-q {
-    width: 50%;
+p {
+    font-family: 'Merriweather';
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+    color: #2e3131;
 }
 
-a:link {
-    color: #00b5cc;
-    background-color: transparent;
+p:first-child {
+    font-weight: 800;
+}
+
+a,
+a:link,
+a:visited,
+a:focus {
     text-decoration: none;
-}
-
-a:visited {
-    color: #3498db;
-    background-color: transparent;
-    text-decoration: none;
+    color: slategray;
 }
 
 a:hover {
-    color: #336e7b;
-    background-color: transparent;
-    text-decoration: underline;
+    color: blueviolet;
 }
 
-a:active {
-    color: #c5eff7;
-    background-color: transparent;
-    text-decoration: underline;
+blockquote q {
+    width: 50%;
+    display: block;
+    margin: auto;
+    font-size: 1.6rem;
+    background-color: lightgray;
+    border-left: 3px solid;
+    padding: 0.5rem 2rem;
+    margin: 40px 0;
+    font-style: italic;
 }
 
-table {
-    border: 6px groove #1C6EA4;
+.villager {
+    border-left: 3px solid #a2ded0;
+}
+
+.farmer {
+    border-left: 3px solid #00b5cc;
+}
+
+.c-main-story-content-author::before {
+    content: "— ";
+}
+
+header figure {
+    position: relative;
+}
+
+header figure img {
+    width: 50%;
+    padding: 5% 5% 0 5%;
+}
+
+header figure figcaption {
+    position: absolute;
+    width: 50%;
+    color: azure;
+    font-weight: 800;
+    top: 50%;
+    left: 5%;
+    text-align: center;
+}
+
+.pos,
+.neg {
+    text-transform: uppercase;
 }
 
 .pos {
-    color: #26c281;
+    color: #a2ded0;
 }
 
 .neg {
     color: #d64541;
+}
+
+table tr:nth-child(even) {
+    background-color: #dcc6e0;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1e7fe;
+}
+
+table caption {
+    caption-side: bottom;
+}
+
+table tr th {
+    background-color: black;
+    color: white;
+}
+
+table tr td {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
 }
